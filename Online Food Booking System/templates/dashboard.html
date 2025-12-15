@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dashboard • ReserV9</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" type="image/jpeg" href="/minilogo.jpeg" />
+</head>
+
+<body class="bg-slate-50 text-slate-800">
+  <header class="bg-gradient-to-r from-indigo-600 via-fuchsia-600 to-rose-600 text-white">
+    <div class="max-w-6xl mx-auto px-4 py-4 grid grid-cols-3 items-center">
+      <div class="flex items-center gap-3">
+        <img src="/logo.jpeg" class="h-8 w-8" />
+      </div>
+      <div class="text-center">
+        <h1 class="text-xl font-semibold">Dashboard</h1>
+      </div>
+      <div class="ml-auto flex items-center gap-2 justify-end">
+        <a href="/explore" class="bg-white text-indigo-700 px-3 py-2 rounded text-sm hover:bg-slate-100">Explore</a>
+        <button id="logoutBtn"
+          class="bg-white text-rose-700 px-3 py-2 rounded text-sm hover:bg-slate-100">Logout</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="max-w-6xl mx-auto px-4 py-6">
+    <section class="my-6 flex items-center justify-center">
+      <a href="/explore" class="bg-indigo-600 text-white px-6 py-3 rounded-lg shadow hover:bg-indigo-700">Explore</a>
+    </section>
+    <section class="grid grid-cols-1 md:grid-cols-3 gap-4">
+      <div class="bg-gradient-to-r from-indigo-50 via-fuchsia-50 to-rose-50 rounded-xl border p-4 shadow-sm">
+        <div class="text-sm text-slate-500">User</div>
+        <div id="userName" class="text-lg font-semibold">—</div>
+        <div id="userEmail" class="text-sm text-slate-600">—</div>
+      </div>
+      <div class="bg-gradient-to-r from-emerald-50 via-teal-50 to-cyan-50 rounded-xl border p-4 shadow-sm">
+        <div class="text-sm text-slate-500">Restaurants</div>
+        <div id="countRestaurants" class="text-2xl font-semibold">0</div>
+        <div id="restaurantsSlider" class="mt-2 text-sm text-slate-700">—</div>
+      </div>
+      <div class="bg-gradient-to-r from-amber-50 via-orange-50 to-rose-50 rounded-xl border p-4 shadow-sm">
+        <div class="text-sm text-slate-500">Your Bookings</div>
+        <div id="countBookings" class="text-2xl font-semibold">0</div>
+      </div>
+    </section>
+
+    <section class="mt-6">
+      <h2 class="text-lg font-semibold mb-2">Recent Bookings</h2>
+      <div id="bookingsList" class="grid grid-cols-1 md:grid-cols-2 gap-3"></div>
+    </section>
+  </main>
+
+  <script src="/static/js/dashboard.js"></script>
+</body>
+
+</html>
