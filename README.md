@@ -1,4 +1,4 @@
-# ReserV9 – Web-based Facility & Restaurant Booking
+# VMATE – Web-based Facility & Restaurant Booking
 
 ReserV9 is a lightweight, modern web app for discovering facilities/restaurants and making quick bookings. It runs with a single command and uses a CSV dataset as its source of truth.
 
