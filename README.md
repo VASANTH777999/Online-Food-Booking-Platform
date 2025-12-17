@@ -1,6 +1,6 @@
 # VMATE – Web-based Facility & Restaurant Booking
 
-ReserV9 is a lightweight, modern web app for discovering facilities/restaurants and making quick bookings. It runs with a single command and uses a CSV dataset as its source of truth.
+VMATE is a lightweight, modern web app for discovering facilities/restaurants and making quick bookings. It runs with a single command and uses a CSV dataset as its source of truth.
 
 ## How to Run
 - Ensure Python 3.8+ is installed.
